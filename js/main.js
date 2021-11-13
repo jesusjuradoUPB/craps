@@ -30,4 +30,11 @@ function jugar(){
   	{
   	alert("¡FELICIDADES! Ganaste la partida ");
   	}
+
+  	if(suma == 2 || suma == 3 || suma == 12){
+  		alert("Mala suerte, perdiste la partida :(")
+  	}
+  	if(suma == 4 || suma == 5 || suma == 6 || suma == 8 || suma == 9 || suma == 10){
+  		punto = suma	
+  	}
 }
