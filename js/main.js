@@ -2,6 +2,7 @@ var posiciones = [0,-160,-320,-481,-642,-803];
 var dado1,dado2,boton_tirar;
 
 window.onload = init;
+
 function init(){
   dado1 = document.getElementById("dado1");
   dado2 = document.getElementById("dado2");
@@ -17,10 +18,16 @@ function tirardado(ref){
 }
 
 function jugar(){
-  let tiro1 = tirardado(dado1);
-  let tiro2 = tirardado(dado2);
+  	let tiro1 = tirardado(dado1);
+  	let tiro2 = tirardado(dado2);
+  	
+  	console.log("Tiro 1: " + tiro1);
+  	console.log("Tiro 2: " + tiro2); 	
 
-  console.log("Tiro 1: "+tiro1)
-  console.log("Tiro 2: "+tiro2)
-
+	let suma = tiro1 + tiro2;
+	
+	if(suma == 7 || suma == 11)
+  	{
+  	alert("¡FELICIDADES! Ganaste la partida ");
+  	}
 }
